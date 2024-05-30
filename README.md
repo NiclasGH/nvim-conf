@@ -9,7 +9,7 @@ You can follow the guide or use the `setup.sh` on linux
 
 ## Dependencies
 `sudo snap install --beta nvim --classic` \
-`sudo apt-get install gcc ripgrep unzip` \
+`sudo apt-get install gcc ripgrep unzip python3-venv` \
 `cargo install tree-sitter-cli` or `npm install tree-sitter-cli`
 
 ## Config
@@ -19,7 +19,8 @@ You can follow the guide or use the `setup.sh` on linux
 ## Dependencies
 `choco install neovim` \
 `choco install llvm` \
-`choco install ripgrep`
+`choco install ripgrep` \
+`choco install python3-venv`
 
 ## Config
 `git clone git@github.com:NiclasGH/NeoVim-Configurations.git $env:LOCALAPPDATA\nvim`
