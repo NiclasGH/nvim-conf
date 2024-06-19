@@ -1,10 +1,7 @@
 # Nvim + Dependencies
 sudo snap install --beta nvim --classic
 sudo apt-get install gcc ripgrep unzip python3-venv
-cargo install tree-sitter-cli
-
-# Nvim configuration
-git clone https://github.com/NiclasGH/NeoVim-Configurations.git ~/.config/nvim
+cargo install tree-sitter-clim
 
 # Font
 wget -O font.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
