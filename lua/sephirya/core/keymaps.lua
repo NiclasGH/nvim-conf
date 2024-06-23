@@ -24,12 +24,6 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
--- Colemak movement
-vim.keymap.set('n', 'm', 'h')
-vim.keymap.set('n', 'n', 'j')
-vim.keymap.set('n', 'e', 'k')
-vim.keymap.set('n', 'i', 'n')
-
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
 --
