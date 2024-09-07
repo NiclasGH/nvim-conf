@@ -33,25 +33,6 @@ vim.keymap.set('n', '<C-Right>', '<C-w><C-l>', { desc = 'Move focus to the right
 vim.keymap.set('n', '<C-Down>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-Up>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
--- Normal mode mappings
-vim.api.nvim_set_keymap('n', 'n', 'j', { noremap = true })
-vim.api.nvim_set_keymap('n', 'e', 'k', { noremap = true })
-vim.api.nvim_set_keymap('n', 's', 'h', { noremap = true })
-vim.api.nvim_set_keymap('n', 't', 'l', { noremap = true })
-vim.api.nvim_set_keymap('n', 'N', 'J', { noremap = true })
-vim.api.nvim_set_keymap('n', 'E', 'K', { noremap = true })
-vim.api.nvim_set_keymap('n', 'S', 'H', { noremap = true })
-vim.api.nvim_set_keymap('n', 'T', 'L', { noremap = true })
-
-vim.api.nvim_set_keymap('n', 'j', 'n', { noremap = true })
-vim.api.nvim_set_keymap('n', 'k', 'e', { noremap = true })
-vim.api.nvim_set_keymap('n', 'h', 's', { noremap = true })
-vim.api.nvim_set_keymap('n', 'l', 't', { noremap = true })
-vim.api.nvim_set_keymap('n', 'J', 'N', { noremap = true })
-vim.api.nvim_set_keymap('n', 'K', 'E', { noremap = true })
-vim.api.nvim_set_keymap('n', 'H', 'S', { noremap = true })
-vim.api.nvim_set_keymap('n', 'L', 'T', { noremap = true })
-
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
