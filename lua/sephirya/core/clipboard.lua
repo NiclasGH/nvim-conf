@@ -3,6 +3,9 @@ function CompareToClipboard()
   -- Get the current filetype
   local ftype = vim.api.nvim_eval("&filetype")
 
+  local original_win = vim.api.nvim_get_current_win()
+  vim.fn.setreg('a', original_win)
+
   -- Copied: ", Selection "x
   local copied = vim.fn.getreg('"')
   vim.fn.setreg('x', copied)
@@ -24,22 +27,23 @@ function CompareToClipboard()
 end
 
 function AcceptChanges()
-  local original_win = vim.fn.getreg('a')
-
   if vim.fn.getreg('x') == '' then
     do return end
   end
 
   vim.cmd('normal! gg') -- Top of page
-  vim.cmd('normal! "yG') -- Copy into unnamed register
+  vim.cmd('normal! yG') -- Copy into unnamed register
   vim.cmd('bd!')
   vim.cmd('bd!')
 
-  vim.api.nvim_set_current_win(original_win.tonumber())
+  if vim.fn.getreg('a') ~= vim.api.nvim_get_current_win() then
+    vim.cmd('bd!')
+  end
 
   -- Paste the changes into original selection
   vim.cmd('normal! gvp')               -- 'gv' re-selects the last visual selection, 'p' pastes the content
   vim.fn.setreg('x', '')
+  vim.fn.setreg('a', '')
 end
 
 -- Bind the CompareToClipboard function to <Space>cc
