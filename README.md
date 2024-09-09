@@ -21,6 +21,7 @@ sudo cp -vf fonts/*.ttf /usr/share/fonts
 - repgrep
 - python3-venv
 - tree-sitter-cli
+- maven (for java language server)
 
 **Linux**
 ```bash
