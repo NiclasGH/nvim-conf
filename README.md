@@ -33,3 +33,23 @@ cargo install tree-sitter-clim
 ```
 choco install neovim llvm ripgrep python3-venv
 ```
+
+# Known and good language servers
+## Rust
+rust-analyzer
+
+## Lua
+lua-language-server
+
+## Python
+pyright
+
+## Java
+jdtls
+
+## Kotlin
+kotlin-language-server
+
+## Bash
+bash-language-server
+
