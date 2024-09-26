@@ -16,7 +16,7 @@ return {
       "L3MON4D3/LuaSnip",
     },
     config = function()
-      local lsp_zero = require "lsp-zero"
+      local lsp_zero = require "lsp-zero" -- Use :h lsp-zero for shortcuts
 
       lsp_zero.on_attach(function(client, bufnr)
         -- see :help lsp-zero-keybindings
