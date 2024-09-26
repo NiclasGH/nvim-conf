@@ -26,6 +26,7 @@ return {
 
       require("mason").setup {}
       require("mason-lspconfig").setup {
+        PATH = "append",
         ensure_installed = { "lua_ls", "rust_analyzer" },
         handlers = {
           function(server_name)
