@@ -22,6 +22,7 @@ return {
         -- see :help lsp-zero-keybindings
         -- to learn the available actions
         lsp_zero.default_keymaps { buffer = bufnr }
+        vim.keymap.set('n', '<C-Space>', function() vim.lsp.buf.code_action() end)
       end)
 
       require("mason").setup {}
