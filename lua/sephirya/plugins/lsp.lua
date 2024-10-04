@@ -27,7 +27,7 @@ return {
 
       vim.diagnostic.config({  -- https://neovim.io/doc/user/diagnostic.html
         virtual_text = false,
-        signs = false,
+        signs = true,
         underline = true,
       })
       -- Diagnostics on hover
