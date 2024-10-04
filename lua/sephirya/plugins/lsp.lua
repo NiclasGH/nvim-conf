@@ -25,6 +25,34 @@ return {
         vim.keymap.set('n', '<C-Space>', function() vim.lsp.buf.code_action() end)
       end)
 
+      vim.diagnostic.config({  -- https://neovim.io/doc/user/diagnostic.html
+        virtual_text = false,
+        signs = false,
+        underline = true,
+      })
+      -- Diagnostics on hover
+      vim.api.nvim_create_autocmd({ "CursorHold" }, {
+        pattern = "*",
+        callback = function()
+          for _, winid in pairs(vim.api.nvim_tabpage_list_wins(0)) do
+            if vim.api.nvim_win_get_config(winid).zindex then
+              return
+            end
+          end
+          vim.diagnostic.open_float({
+            scope = "cursor",
+            focusable = false,
+            close_events = {
+              "CursorMoved",
+              "CursorMovedI",
+              "BufHidden",
+              "InsertCharPre",
+              "WinLeave",
+            },
+          })
+        end
+      })
+
       require("mason").setup {}
       require("mason-lspconfig").setup {
         PATH = "append",
