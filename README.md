@@ -8,7 +8,7 @@ Windows
 
 ## Known dependencies
 ### Font
-Install the [Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip). Should be installed as amin on windows. Linux can use:
+Install the [Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip). Should be installed as admin on windows. Linux can use:
 
 ```bash
 wget -O font.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
@@ -18,7 +18,7 @@ sudo cp -vf fonts/*.ttf /usr/share/fonts
 
 ### Libs
 - gcc
-- repgrep
+- ripgrep
 - python3-venv
 - tree-sitter-cli
 - maven (for java language server)
