@@ -17,8 +17,12 @@ vim.opt.showmode = false
 --  See `:help 'clipboard'`
 vim.opt.clipboard = 'unnamedplus'
 
--- Enable break indent
+-- Indentation
 vim.opt.breakindent = true
+vim.opt.expandtab = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+vim.opt.shiftwidth = 4
 
 -- Save undo history
 vim.opt.undofile = true
