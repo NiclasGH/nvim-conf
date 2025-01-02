@@ -34,6 +34,10 @@ cargo install tree-sitter-clim
 choco install neovim llvm ripgrep python3-venv
 ```
 
+### WSL
+If you're using WSL you will need a separate clipboard manager. For this you need to install win32yank on your windows: `winget install win32yank`
+
+
 # Known and good language servers
 ## Rust
 rust-analyzer
