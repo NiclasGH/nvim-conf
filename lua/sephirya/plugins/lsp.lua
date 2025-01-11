@@ -57,20 +57,6 @@ return {
           })
         end
       })
-      -- -- Inlay Hints
-      -- if vim.lsp.inlay_hint then
-      --   vim.keymap.set('n',
-      --     '<leader>L', 
-      --     function() if vim.lsp.inlay_hint.is_enabled() then
-      --       vim.lsp.inlay_hint.enable(false, { 0 })
-      --     else
-      --       vim.lsp.inlay_hint.enable(true, { 0 })
-      --     end end,
-      --     { desc = "Toggle Inlay Hints" }
-      --   )
-      -- end
-
-      vim.lsp.inlay_hint.enable(true, { 0 })
 
       require("mason").setup {}
       require("mason-lspconfig").setup {
