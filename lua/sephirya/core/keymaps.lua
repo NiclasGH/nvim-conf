@@ -37,6 +37,8 @@ vim.keymap.set('n', '<C-Up>', '<C-w><C-k>', { desc = 'Move focus to the upper wi
 vim.keymap.set('i', '<C-Del>', '<C-o>dw')
 vim.keymap.set('i', '<C-Bs>', '<C-o>db')
 
+-- Inlay Hints
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
