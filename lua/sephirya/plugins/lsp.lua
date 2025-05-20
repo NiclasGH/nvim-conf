@@ -27,7 +27,8 @@ return {
         -- see :help lsp-zero-keybindings
         -- to learn the available actions
         lsp_zero.default_keymaps { buffer = bufnr }
-        vim.keymap.set('n', '<C-Space>', function() vim.lsp.buf.code_action() end)
+        vim.keymap.set('n', '<A-Enter>', function() vim.lsp.buf.code_action() end) -- win/linux
+        vim.keymap.set('n', '<M-Enter>', function() vim.lsp.buf.code_action() end) -- macOs
       end)
 
       vim.diagnostic.config({  -- https://neovim.io/doc/user/diagnostic.html
