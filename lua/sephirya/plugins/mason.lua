@@ -1,5 +1,5 @@
 return {
-  {
+  { -- Dont install rust-analyzer through Mason. This has extra lsp features, that the generic lsp guideline doesnt include
     'mrcjkb/rustaceanvim',
     version = '^5', -- Recommended
     lazy = false, -- This plugin is already lazy
@@ -15,7 +15,6 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {
-          "rust-analyzer",
           "lua_ls",
           "autotools_ls", -- make
           "bashls",

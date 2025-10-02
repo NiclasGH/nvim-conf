@@ -34,6 +34,11 @@ vim.diagnostic.config({       -- https://neovim.io/doc/user/diagnostic.html
   virtual_text = false,
   signs = true,
   underline = true,
+  severity_sort = true,
+  float = {
+    border = "rounded",
+    source = true,
+  },
 })
 
 -- Diagnostics on hover
