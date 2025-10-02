@@ -9,6 +9,7 @@ return {
         { "<leader>c", group = "clipboard comparison" },
         { "<leader>f", group = "search" },
         { "<leader>l", group = "lsp" },
+        { "<leader>b", group = "bufferline" },
         {"<leader>x", group = "diagnostics/quickfix" },
         { "[", group = "prev" },
         { "]", group = "next" },
