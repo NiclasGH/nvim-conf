@@ -23,6 +23,7 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
 
 -- Save undo history
 vim.opt.undofile = true

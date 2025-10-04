@@ -31,10 +31,6 @@ return {
           text_align = "left",
         },
       },
-      get_element_icon = function(opts)
-        local icons = require("config.icons")
-        return icons.ft[opts.filetype]
-      end,
     },
   },
   config = function(_, opts)
