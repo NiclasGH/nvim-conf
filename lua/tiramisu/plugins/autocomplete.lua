@@ -11,6 +11,17 @@ return {
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {
+    completion = {
+      menu = {
+        border = "rounded",
+        winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
+      },
+      documentation = {
+        window = {
+          border = "rounded",
+        },
+      },
+    },
     -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
     -- 'super-tab' for mappings similar to vscode (tab to accept)
     -- 'enter' for enter to accept
@@ -31,7 +42,7 @@ return {
       default = { "lsp", "path", "snippets", "buffer" },
       providers = {
         lsp = {
-          min_keyword_length = 1, -- Number of characters to trigger porvider
+          min_keyword_length = 0, -- Number of characters to trigger porvider
         },
         path = {
           min_keyword_length = 0,
