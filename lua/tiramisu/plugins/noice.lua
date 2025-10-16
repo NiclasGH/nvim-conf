@@ -4,6 +4,7 @@ return {
   dependencies = {
     "MunifTanjim/nui.nvim",
     "rcarriga/nvim-notify",
+    "nvim-lualine/lualine.nvim",
   },
   config = function()
     require("notify").setup({
@@ -37,6 +38,20 @@ return {
             find = "written",
           },
           opts = { skip = true },
+        },
+      },
+    })
+    require("lualine").setup({
+      sections = {
+        lualine_a = {},
+        lualine_b = {'branch', 'diff', 'diagnostics'},
+        lualine_c = {'filename'},
+        lualine_x = {
+          {
+            require("noice").api.statusline.mode.get,
+            cond = require("noice").api.statusline.mode.has,
+            color = { fg = "#ff9e64" },
+          }
         },
       },
     })
