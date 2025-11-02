@@ -8,6 +8,7 @@ return {
         mode = { "n", "v" },
         { "<leader>c", group = "clipboard comparison" },
         { "<leader>f", group = "search" },
+        { "<leader>d", group = "debugger" },
         { "<leader>l", group = "lsp" },
         { "<leader>b", group = "bufferline" },
         {"<leader>x", group = "diagnostics/quickfix" },
