@@ -10,6 +10,7 @@ return {
         { "<leader>f", group = "search" },
         { "<leader>d", group = "debugger" },
         { "<leader>l", group = "lsp" },
+        { "<leader>q", group = "query" },
         { "<leader>b", group = "bufferline" },
         {"<leader>x", group = "diagnostics/quickfix" },
         { "[", group = "prev" },
