@@ -7,7 +7,7 @@ return {
       {
         "<leader>L",
         function()
-          vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled(), { buffnr })
+          vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = 0 }), { bufnr = 0 })
         end,
         desc = "Toggle Inlay Hints",
       },

@@ -23,8 +23,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
     nmap('<leader>ld', vim.lsp.buf.hover, 'Hover Documentation')
 
     -- Keymaps for diagnostics
-    nmap('<leader>lp', vim.diagnostic.goto_prev, 'Go to Previous Diagnostic')
-    nmap('<leader>ln', vim.diagnostic.goto_next, 'Go to Next Diagnostic')
+    nmap('<leader>lp', function() vim.diagnostic.jump({ count = -1, float = true }) end, 'Go to Previous Diagnostic')
+    nmap('<leader>ln', function() vim.diagnostic.jump({ count = 1, float = true }) end, 'Go to Next Diagnostic')
     nmap('<leader>ll', vim.diagnostic.open_float, 'Show Line Diagnostics')
   end,
 })
